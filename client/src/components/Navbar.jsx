@@ -3,6 +3,7 @@ import logo from '../../images/logo.png'
 import { useState } from 'react'
 import { AiOutlineClose } from 'react-icons/ai'
 import { HiMenuAlt4 } from 'react-icons/hi'
+import { Link } from 'react-router-dom'
 
 const NavBarItem = ({ title, classProps }) => {
     return (
@@ -26,6 +27,17 @@ const Navbar = () => {
                 <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
                     Login
                 </li>
+                <Link to="/">
+                    <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
+                        Home
+                    </li>
+                </Link>
+                <Link to="/coin">
+                    <li className='bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]'>
+                        Coinmarket Cap
+                    </li>
+                </Link>
+
             </ul>
             <div className='flex relative'>
                 {
